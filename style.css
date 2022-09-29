@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.container-todo-list {
+    display: flex;
+    justify-content: center;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputTodo{
+    width: max(2rem, 30vw);
+    height: max(0.2rem, 5vh);
+}
+
+.dateTodo {
+    height: max(0.2rem, 5vh);
+    width: max(1rem, 16vw);
+}
+
+.addTodoBtn {
+    color: white;
+    background-color: #B2AC88;
+    border: 1px solid rgb(255, 255, 255);
+}
