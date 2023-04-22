@@ -132,7 +132,6 @@
                         const textBox = document.createElement('input');
                         textBox.type = 'textBox';
                         textBox.id = 'textBoxId' + todo.id;
-                        console.log(textBox.id);
                         div.appendChild(textBox);
                         const datePicker = document.createElement('input');
                         datePicker.type = 'date';
@@ -148,7 +147,7 @@
                         
                         
                     }
-                    else {                    
+                    else {                   
                         div.innerText = todo.title +" "+ todo.dueDate;
                         const checkbox = document.createElement('input');
                         checkbox.type = 'checkbox';

@@ -1,35 +1,49 @@
 body {
     margin: 0;
     padding: 0;
+    font-size: 2rem;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
+.container{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80%;
 }
 
-.container-todo-list {
+.input-row {
     display: flex;
-    justify-content: center;
 }
+
 
 .list {
     display: flex;
     flex-direction: column;
 }
 
-.inputTodo{
-    width: max(2rem, 30vw);
-    height: max(0.2rem, 5vh);
+.list div {
+    background-color: rgb(235, 235, 235);
+    margin: 5px 0;
+    overflow-wrap: break-word;
 }
 
-.dateTodo {
-    height: max(0.2rem, 5vh);
-    width: max(1rem, 16vw);
+
+
+.inputTodo, .dateTodo{
+    padding: 1rem;
+    font-size: 2rem;
+    width: 90%
+}
+
+.inputTodo:focus, .dateTodo:focus{
+    outline: none;
 }
 
 .addTodoBtn {
     color: white;
-    background-color: #B2AC88;
+    background-color: #0d8337;
     border: 1px solid rgb(255, 255, 255);
+    font-weight: bold;
+    cursor: pointer;
+    width: 10%;
 }
